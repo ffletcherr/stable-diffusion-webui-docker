@@ -67,4 +67,4 @@ ADD --chown=user https://huggingface.co/ckpt/sd15/resolve/main/v1-5-pruned-emaon
 
 EXPOSE 7860
 
-CMD cd /content/stable-diffusion-webui && python webui.py --xformers --listen --enable-insecure-extension-access --gradio-queue
+CMD cd /content/stable-diffusion-webui && python webui.py --xformers --listen --api --enable-insecure-extension-access --gradio-queue
